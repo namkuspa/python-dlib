@@ -23,7 +23,7 @@ RUN apk update \
         giflib-dev \
        openblas-dev \
        ca-certificates wget
-RUN pip install dlib numpy scipy
+RUN pip install dlib numpy scipy  --no-cache-dir
 RUN apk del .build-dependencies \
     && rm -rf /var/cache/apk/*
 ENTRYPOINT ["python3"]
