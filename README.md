@@ -10,7 +10,7 @@
 
 ## ¿Cómo usar?
 ```console
-$ docker run --rm -it namkuspa/python-opencv-dlib:3.6.6
+$ docker run --rm -it namkuspa/python-dlib:3.6.6
 Python 3.6.6 (default, Jun 27 2018, 22:32:42) 
 [GCC 6.3.0 20170516] on linux
 Type "help", "copyright", "credits" or "license" for more information.
