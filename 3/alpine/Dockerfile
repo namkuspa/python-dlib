@@ -1,4 +1,7 @@
 FROM python:3.6.6-alpine
+
+LABEL maintainer="Jose Truyol <jose@namku.cl>"
+
 # Instalando DLIB en Alpine
 RUN apk update \
     && apk add --no-cache git \
@@ -13,3 +16,5 @@ RUN apk update \
        ca-certificates wget \
     && rm -rf /var/cache/apk/*
 RUN pip install dlib numpy scipy
+
+ENTRYPOINT ["python3"]
